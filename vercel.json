@@ -1,7 +1,6 @@
 {
   "version": 2,
   "framework": "nextjs",
-  "nodeVersion": "18.x",
   "env": {
     "NEXT_PUBLIC_VERSION": "@venus_project/1.0.1"
   }
