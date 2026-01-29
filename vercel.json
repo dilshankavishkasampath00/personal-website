@@ -9,29 +9,16 @@
   "env": {
     "NEXT_PUBLIC_VERSION": "@venus_project/1.0.1"
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
     }
   ],
-  "functions": {
-    "api/**/*.ts": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  },
   "buildCache": {
     "paths": [
       "node_modules/**",
       ".next/cache/**"
     ]
-  },
-  "crons": []
+  }
 }
