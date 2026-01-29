@@ -1,24 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "next build",
-  "outputDirectory": ".next",
-  "devCommand": "next dev",
-  "installCommand": "npm install",
   "framework": "nextjs",
   "nodeVersion": "18.x",
   "env": {
     "NEXT_PUBLIC_VERSION": "@venus_project/1.0.1"
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
-  "buildCache": {
-    "paths": [
-      "node_modules/**",
-      ".next/cache/**"
-    ]
   }
 }
