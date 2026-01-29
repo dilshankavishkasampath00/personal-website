@@ -95,5 +95,27 @@ export const Certifications = [
     },
 ];
 
-// Keeping this empty or minimal as per request to hide it, but keeping structure to avoid errors if imported
-export const portfolioinfo = []
+// Portfolio items with proper typing
+export const portfolioinfo = [
+    {
+        image: getImgPath('/images/portfolio/cozycasa.png'),
+        alt: 'Cozy Casa Project',
+        title: 'Cozy Casa',
+        info: 'Real Estate Platform',
+        slug: 'cozy-casa',
+    },
+    {
+        image: getImgPath('/images/portfolio/humans.png'),
+        alt: 'Humans Project',
+        title: 'Humans',
+        info: 'Social Network App',
+        slug: 'humans',
+    },
+    {
+        image: getImgPath('/images/portfolio/mars.png'),
+        alt: 'Mars Project',
+        title: 'Mars',
+        info: 'Space Exploration App',
+        slug: 'mars',
+    },
+]
