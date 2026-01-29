@@ -8,8 +8,7 @@
         "export": "next build",
         "start": "next start",
         "lint": "next lint",
-        "sync-version": "node scripts/sync-version.js",
-        "prebuild": "npm run sync-version"
+        "sync-version": "node scripts/sync-version.js"
     },
     "dependencies": {
         "@iconify/icons-ion": "^1.2.10",
