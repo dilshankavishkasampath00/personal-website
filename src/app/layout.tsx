@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import ScrollToTop from '@/components/ScrollToTop';
 import Aoscompo from "@/utils/aos";
 import NextTopLoader from 'nextjs-toploader';
+import { AuthDialogProvider } from "@/app/context/AuthDialogContext";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -23,12 +24,14 @@ export default function RootLayout({
           enableSystem={true}
           defaultTheme="system"
         >
-          <Aoscompo>
-            <Header />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <ScrollToTop />
+          <AuthDialogProvider>
+            <Aoscompo>
+              <Header />
+              {children}
+              <Footer />
+            </Aoscompo>
+            <ScrollToTop />
+          </AuthDialogProvider>
         </ThemeProvider>
       </body>
     </html>
