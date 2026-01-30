@@ -9,6 +9,7 @@ const nextConfig = {
   assetPrefix: basePath,
   images: {
     unoptimized: true,
+    qualities: [75, 100],
   },
   trailingSlash: true,
   env: {
